@@ -793,16 +793,16 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Con
 
 
 
-echo.
-choice /c yn /t 3 /d y /m "Disable fast startup for fewer errors while signing in"
-if ERRORLEVEL 2 goto skipfstartup
-if ERRORLEVEL 1 goto fstartup
+REM echo.
+REM choice /c yn /t 3 /d y /m "Disable fast startup for fewer errors while signing in"
+REM if ERRORLEVEL 2 goto skipfstartup
+REM if ERRORLEVEL 1 goto fstartup
 
 
-:fstartup
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
+REM :fstartup
+REM reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
 
-:skipfstartup
+REM :skipfstartup
 
 
 
@@ -1865,15 +1865,15 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Con
 
 
 
-echo.
-set ANSWER=y
-set /p ANSWER= Disable fast startup for fewer errors while signing in? (y/n) [%ANSWER%]: 
-echo. 
-if %answer%==n goto skipfstartup
+REM echo.
+REM set ANSWER=y
+REM set /p ANSWER= Disable fast startup for fewer errors while signing in? (y/n) [%ANSWER%]: 
+REM echo. 
+REM if %answer%==n goto skipfstartup
 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
+REM reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
 
-:skipfstartup
+REM :skipfstartup
 
 
 echo.
@@ -2996,16 +2996,16 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Con
 
 
 
-echo.
-choice /c yn /t 3 /d y /m "Disable fast startup for fewer errors while signing in"
-if ERRORLEVEL 2 goto skipfstartup
-if ERRORLEVEL 1 goto fstartup
+REM echo.
+REM choice /c yn /t 3 /d y /m "Disable fast startup for fewer errors while signing in"
+REM if ERRORLEVEL 2 goto skipfstartup
+REM if ERRORLEVEL 1 goto fstartup
 
 
-:fstartup
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
+REM :fstartup
+REM reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
 
-:skipfstartup
+REM :skipfstartup
 
 
 
@@ -4013,15 +4013,15 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Con
 
 
 
-echo.
-set ANSWER=y
-set /p ANSWER= Disable fast startup for fewer errors while signing in? (y/n) [%ANSWER%]: 
-echo. 
-if %answer%==n goto skipfstartup
+REM echo.
+REM set ANSWER=y
+REM set /p ANSWER= Disable fast startup for fewer errors while signing in? (y/n) [%ANSWER%]: 
+REM echo. 
+REM if %answer%==n goto skipfstartup
 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
+REM reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v "HiberbootEnabled" /t REG_DWORD /d 0 /f
 
-:skipfstartup
+REM :skipfstartup
 
 
 echo.
